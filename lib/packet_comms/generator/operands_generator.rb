@@ -10,7 +10,7 @@ module PacketComms
       private
 
       def operands
-        @operands ||= (1..operand_ceiling).to_a
+        @operands ||= (0..operand_ceiling).to_a
       end
 
       def operand_ceiling
