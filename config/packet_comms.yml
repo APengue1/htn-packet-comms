@@ -1,0 +1,11 @@
+---
+default: &default
+  number_of_packets: 1000
+  number_of_accumulators: 4
+  operand_ceiling: 10
+  headers:
+    - "HtN"
+  operators:
+    - "ADD"
+    - "SUB"
+    - "MUL"

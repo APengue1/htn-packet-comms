@@ -1,0 +1,10 @@
+require: rubocop-ims
+
+Rails:
+  Enabled: false
+
+Style/CollectionMethods:
+  Enabled: false
+
+Metrics/ParameterLists:
+  CountKeywordArgs: false

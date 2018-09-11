@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH.unshift(File.expand_path('lib'))
+
+require "packet_comms"
+
+results, packets = PacketComms::Driver.new.generate
+
+puts results
+puts packets.join('|')
