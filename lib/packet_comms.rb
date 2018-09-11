@@ -19,7 +19,7 @@ module PacketComms
         packet = packet_generator.generate
         packets << packet
         results[packet.accumulator] ||= 0
-        results[packet.accumulator] += packet.result
+        results[packet.accumulator] = packet.operate(results[packet.accumulator])
       end
       [results, packets]
     end

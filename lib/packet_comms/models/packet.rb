@@ -12,14 +12,14 @@ module PacketComms
         @accumulator = accumulator
       end
 
-      def result
+      def operate(operand)
         case @operator
         when "ADD"
-          @operand + @operand
+          operand + @operand
         when "SUB"
-          @operand * -2
+          operand - @operand
         when "MUL"
-          @operand * @operand
+          operand * @operand
         else
           raise ArgumentError, "'#{@operator}' not supported"
         end
